@@ -1,0 +1,12 @@
+Pu Ke
+pk2532
+
+This is an implementation of Player AI to play 2048 against a Computer AI which insert tiles 2 or 4 randomly.
+
+The Player AI use minimax and alpha-beta pruning algorithm. The difference between pure minimax( You can uncomment the function in the code, and try that with the main function in PlayerAI_3 ) and the version with alpha-beta pruning is the speed. For a search tree of depth 5, on average, the time for pure minimax in one step is 0.2s, while the time for minimax with pruning is 0.1s; For a search tree of depth 5, on average, the time for pure minimax in one step is 5.9s, while the time for minimax with pruning is 1.1s. We can see from that pruning is really helpful.
+
+My evaluation function is linearly composed of 4 heuristic functions, which evaluate the blank space numbers, monotonicity, max value of tiles, and smoothness. Their values in the main evaluation function are weighted through a lot of trials. 
+
+The best result for the PlayerAI is 2048. 
+
+I love this assignment by the way! ( And I gained a lot of skills playing 2048 during this ...)
